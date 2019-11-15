@@ -5,6 +5,7 @@ public class Contact {
     public String contact_name;
     public String company;
     public String address;
+    public String tableName;
 
     public Contact() {
     }
