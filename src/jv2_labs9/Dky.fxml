@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="jv2_labs9.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="title" layoutX="265.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register" wrappingWidth="56.271484375" />
+      <RadioButton onAction="#langEN" fx:id="rbEN" layoutX="23.0" layoutY="26.0" mnemonicParsing="false" selected="true" text="EN" />
+      <RadioButton onAction="#langVN" fx:id="rbVN" layoutX="23.0" layoutY="51.0" mnemonicParsing="false" text="VN" />
+      <TextField fx:id="txtname" layoutX="96.0" layoutY="60.0" prefHeight="25.0" prefWidth="426.0" promptText="User name" />
+      <TextField fx:id="txtemail" layoutX="96.0" layoutY="106.0" prefHeight="25.0" prefWidth="426.0" promptText="Email" />
+      <TextField fx:id="txtpw" layoutX="96.0" layoutY="154.0" prefHeight="25.0" prefWidth="426.0" promptText="PassWord" />
+      <TextField fx:id="txtcpw" layoutX="96.0" layoutY="200.0" prefHeight="25.0" prefWidth="426.0" promptText="Confirm PassWord" />
+      <Button fx:id="txtSignup" layoutX="465.0" layoutY="264.0" mnemonicParsing="false" text="Sign up" />
+   </children>
+</Pane>

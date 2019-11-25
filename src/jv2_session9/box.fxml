@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="jv2_session9.BoxController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text fx:id="title" layoutX="221.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Language">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <RadioButton fx:id="rbEN" onAction="#langEN" layoutX="279.0" layoutY="116.0" mnemonicParsing="false" selected="true" text="EN" />
+        <RadioButton fx:id="rbVN" onAction="#langVN" layoutX="278.0" layoutY="164.0" mnemonicParsing="false" text="VN" />
+        <RadioButton fx:id="rbDE" onAction="#langDE" layoutX="279.0" layoutY="209.0" mnemonicParsing="false" text="DE" />
+    </children>
+</Pane>
