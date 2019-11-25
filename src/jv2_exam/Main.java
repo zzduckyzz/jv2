@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         String choose = null;
         boolean exit = false;
-        StudentManager studentManager = new StudentManager();
+        ManageStudent studentManager = new ManageStudent();
         int studentId;
 
 
@@ -24,8 +24,7 @@ public class Main {
                         break;
                     case "3":
                         studentManager.save();
-                    case "4":
-                        studentManager.exit();
+
 
 
                     default:

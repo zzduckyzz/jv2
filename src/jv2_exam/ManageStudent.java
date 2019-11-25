@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ManageStudent implements StudentInterface {
-    public ArrayList<Student> stArr = new ArrayList<>();
+
+    public ArrayList<Student> students = new ArrayList<>();
     public Scanner sc = new Scanner(System.in);
     public int studentId = 0;
-
     @Override
     public void add() {
         studentId++;
@@ -21,18 +21,13 @@ public class ManageStudent implements StudentInterface {
         System.out.println("enter student phone");
         st.setPhone(sc.nextLine());
 
-        stArr.add(st);
+        students.add(st);
     }
 
     @Override
     public void show() {
 
-    }
-
-    @Override
-    public void display() {
-
-        File f = new File("D:/FPTSchools/ADFII_final_exam.txt");
+        File f = new File("C:/Users/AD/IdeaProjects/untitled1/student.txt");
         String ftxt = "";
         if (f.canRead()) {
             try {
@@ -58,17 +53,18 @@ public class ManageStudent implements StudentInterface {
                 System.out.println(e.getMessage());
             }
         }
+
     }
 
     @Override
     public void save() {
-        File f = new File("C:\\Users\\AD\\IdeaProjects\\untitled1\\student.txt");
+        File f = new File("C:/Users/AD/IdeaProjects/untitled1/student.txt");
         String ftxt = "";
-        if (f.canWrite()) {
+        if (f.canWrite())
             try {
                 FileOutputStream fos = new FileOutputStream(f);
                 DataOutputStream dos = new DataOutputStream(fos);
-                for (Student s1:stArr) {
+                for (Student s1:students) {
                     String stId = s1.getStudentId()+"-";
                     String stName = s1.getName()+"-";
                     String stAddress = s1.getAddress()+"-";
@@ -82,4 +78,9 @@ public class ManageStudent implements StudentInterface {
             }
         }
     }
+
+    }
+
+
+
 }
